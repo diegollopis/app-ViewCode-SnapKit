@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13270EE2271B809300B2FE0A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13270EE1271B809300B2FE0A /* Alert.swift */; };
 		133AF503271A478C00EF8188 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF502271A478C00EF8188 /* RegisterScreenController.swift */; };
 		133AF505271A47AF00EF8188 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF504271A47AF00EF8188 /* RegisterScreen.swift */; };
 		133AF507271AD0E300EF8188 /* RegisterScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13270EE1271B809300B2FE0A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		133AF502271A478C00EF8188 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		133AF504271A47AF00EF8188 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenProtocol.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 				ECB9F6AF1F2BDA752B21425F /* Pods-appViewCodeSnapKit.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		13270EDE271B7FB700B2FE0A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				13270EE1271B809300B2FE0A /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		133AF4FE271A471200EF8188 /* screen */ = {
@@ -120,6 +130,7 @@
 			children = (
 				13C95512271A372F007242CE /* Commons */,
 				13C9550B271A05CE007242CE /* protocols */,
+				13270EDE271B7FB700B2FE0A /* Alert */,
 				13C95506271A0539007242CE /* LoginScreen */,
 				13C95513271A3747007242CE /* RegisterScreen */,
 				13C954FB2719F9C9007242CE /* Assets.xcassets */,
@@ -328,6 +339,7 @@
 				13C9550A271A05B4007242CE /* LoginScreen.swift in Sources */,
 				133AF505271A47AF00EF8188 /* RegisterScreen.swift in Sources */,
 				13C95517271A3803007242CE /* LoginScreenControllerExtension.swift in Sources */,
+				13270EE2271B809300B2FE0A /* Alert.swift in Sources */,
 				13C9550E271A0636007242CE /* ViewCodeProtocol.swift in Sources */,
 				133AF507271AD0E300EF8188 /* RegisterScreenProtocol.swift in Sources */,
 				133AF503271A478C00EF8188 /* RegisterScreenController.swift in Sources */,
