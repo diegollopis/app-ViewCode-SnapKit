@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133AF503271A478C00EF8188 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF502271A478C00EF8188 /* RegisterScreenController.swift */; };
+		133AF505271A47AF00EF8188 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF504271A47AF00EF8188 /* RegisterScreen.swift */; };
+		133AF507271AD0E300EF8188 /* RegisterScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */; };
+		133AF509271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF508271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift */; };
 		13C954F32719F9C6007242CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C954F22719F9C6007242CE /* AppDelegate.swift */; };
 		13C954F52719F9C6007242CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C954F42719F9C6007242CE /* SceneDelegate.swift */; };
 		13C954F72719F9C6007242CE /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C954F62719F9C6007242CE /* LoginScreenController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133AF502271A478C00EF8188 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
+		133AF504271A47AF00EF8188 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenProtocol.swift; sourceTree = "<group>"; };
+		133AF508271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewControllerExtension.swift; sourceTree = "<group>"; };
 		13C954EF2719F9C6007242CE /* appViewCodeSnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appViewCodeSnapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C954F22719F9C6007242CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C954F42719F9C6007242CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		133AF4FE271A471200EF8188 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				133AF504271A47AF00EF8188 /* RegisterScreen.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		133AF4FF271A472500EF8188 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				133AF502271A478C00EF8188 /* RegisterScreenController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		133AF500271A473A00EF8188 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		133AF501271A474500EF8188 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				133AF508271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		13C954E62719F9C6007242CE = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				13C95512271A372F007242CE /* Commons */,
-				13C9550B271A05CE007242CE /* Protocols */,
+				13C9550B271A05CE007242CE /* protocols */,
 				13C95506271A0539007242CE /* LoginScreen */,
 				13C95513271A3747007242CE /* RegisterScreen */,
 				13C954FB2719F9C9007242CE /* Assets.xcassets */,
@@ -116,12 +156,12 @@
 			path = screen;
 			sourceTree = "<group>";
 		};
-		13C9550B271A05CE007242CE /* Protocols */ = {
+		13C9550B271A05CE007242CE /* protocols */ = {
 			isa = PBXGroup;
 			children = (
 				13C9550D271A0636007242CE /* ViewCodeProtocol.swift */,
 			);
-			path = Protocols;
+			path = protocols;
 			sourceTree = "<group>";
 		};
 		13C95512271A372F007242CE /* Commons */ = {
@@ -136,6 +176,10 @@
 		13C95513271A3747007242CE /* RegisterScreen */ = {
 			isa = PBXGroup;
 			children = (
+				133AF500271A473A00EF8188 /* protocols */,
+				133AF501271A474500EF8188 /* extensions */,
+				133AF4FE271A471200EF8188 /* screen */,
+				133AF4FF271A472500EF8188 /* controller */,
 			);
 			path = RegisterScreen;
 			sourceTree = "<group>";
@@ -279,10 +323,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C954F72719F9C6007242CE /* LoginScreenController.swift in Sources */,
+				133AF509271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift in Sources */,
 				13C95519271A3863007242CE /* LoginScreenProtocol.swift in Sources */,
 				13C9550A271A05B4007242CE /* LoginScreen.swift in Sources */,
+				133AF505271A47AF00EF8188 /* RegisterScreen.swift in Sources */,
 				13C95517271A3803007242CE /* LoginScreenControllerExtension.swift in Sources */,
 				13C9550E271A0636007242CE /* ViewCodeProtocol.swift in Sources */,
+				133AF507271AD0E300EF8188 /* RegisterScreenProtocol.swift in Sources */,
+				133AF503271A478C00EF8188 /* RegisterScreenController.swift in Sources */,
 				13C954F32719F9C6007242CE /* AppDelegate.swift in Sources */,
 				13C954F52719F9C6007242CE /* SceneDelegate.swift in Sources */,
 			);

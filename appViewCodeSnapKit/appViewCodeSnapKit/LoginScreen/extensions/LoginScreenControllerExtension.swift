@@ -15,7 +15,9 @@ extension LoginScreenController: LoginScreenProtocol {
     }
     
     func actionRegisterButton() {
-        print("Cadastrar novo usuário")
+        
+        let registerScreenViewController = RegisterScreenController()
+        navigationController?.pushViewController(registerScreenViewController, animated: true)
     }
 }
 
