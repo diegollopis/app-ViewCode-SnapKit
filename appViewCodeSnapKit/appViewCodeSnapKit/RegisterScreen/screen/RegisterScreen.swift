@@ -45,17 +45,15 @@ class RegisterScreen: UIView, ViewCodeProtocol {
     }()
     
     lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.placeholder = "Digite sua senha"
-        textField.backgroundColor = .white
-        textField.textColor = .lightGray
-        textField.borderStyle = .roundedRect
-        textField.keyboardType = .default
-        textField.isSecureTextEntry = true
-        textField.textContentType = .none
-        textField.autocorrectionType = .no
-        return textField
+        let passwordTextField = UITextField()
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.textColor = .darkGray
+        passwordTextField.backgroundColor = .white
+        passwordTextField.placeholder = "Digite sua senha"
+        passwordTextField.keyboardType = .default
+        passwordTextField.borderStyle = .roundedRect
+        passwordTextField.textContentType = .oneTimeCode
+        return passwordTextField
     }()
     
     lazy var registerButton: UIButton = {
@@ -91,9 +89,17 @@ class RegisterScreen: UIView, ViewCodeProtocol {
         self.registerButton.isEnabled = false
     }
     
+    func getEmail() -> String {
+        self.emailTextField.text ?? ""
+    }
+    
+    func getPassword() -> String {
+        self.passwordTextField.text ?? ""
+    }
+    
     func areTextFieldsEmpty() -> Bool {
-        let email = self.emailTextField.text
-        let password = self.passwordTextField.text
+        let email = self.getEmail()
+        let password = self.getPassword()
         
         if email != "" && password != ""{
             return true

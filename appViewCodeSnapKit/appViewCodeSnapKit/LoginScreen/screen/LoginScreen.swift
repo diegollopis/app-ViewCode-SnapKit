@@ -106,9 +106,17 @@ class LoginScreen: UIView, ViewCodeProtocol {
         self.loginButton.isEnabled = false
     }
     
+    func getEmail() -> String {
+        self.emailTextField.text ?? ""
+    }
+    
+    func getPassword() -> String {
+        self.passwordTextField.text ?? ""
+    }
+    
     func areTextFieldsEmpty() -> Bool {
-        let email = self.emailTextField.text
-        let password = self.passwordTextField.text
+        let email = self.getEmail()
+        let password = self.getPassword()
         
         if email != "" && password != ""{
             return true
