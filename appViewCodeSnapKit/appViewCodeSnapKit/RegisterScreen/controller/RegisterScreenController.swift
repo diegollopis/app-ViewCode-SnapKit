@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterScreenController: UIViewController {
     
+    var auth: Auth?
+    var alert: Alert?
     var registerScreen: RegisterScreen?
         
     override func loadView() {
@@ -21,6 +24,7 @@ class RegisterScreenController: UIViewController {
         super.viewDidLoad()
         registerScreen?.registerScreenDelegate(delegate: self)
         registerScreen?.textFieldDelegate(delegate: self)
-
+        self.auth = Auth.auth()
+        self.alert = Alert(controller: self)
     }
 }

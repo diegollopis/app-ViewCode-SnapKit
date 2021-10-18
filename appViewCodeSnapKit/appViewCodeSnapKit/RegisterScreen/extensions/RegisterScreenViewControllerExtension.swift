@@ -15,7 +15,22 @@ extension RegisterScreenController: RegisterScreenProtocol {
     }
     
     func actionRegisterButton() {
-        self.navigationController?.popViewController(animated: true)
+        
+        guard let register = self.registerScreen else {return}
+        
+        let email: String = register.getEmail()
+        let password: String = register.getPassword()
+       
+        self.auth?.createUser(withEmail: email, password: password, completion: { result, error in
+            if error != nil {
+                self.alert?.getAlert(title: "Erro", message: "Erro ao cadastrar, tente novamente mais tarde")
+                
+            } else {
+                self.alert?.getAlert(title: "Sucesso", message: "Cadastro efetuado com sucesso", completion: {
+                    self.navigationController?.popViewController(animated: true)
+                })
+            }
+        })
     }
 }
 
