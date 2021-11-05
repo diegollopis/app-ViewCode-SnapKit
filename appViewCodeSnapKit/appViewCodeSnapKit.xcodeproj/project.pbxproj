@@ -13,6 +13,10 @@
 		133AF505271A47AF00EF8188 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF504271A47AF00EF8188 /* RegisterScreen.swift */; };
 		133AF507271AD0E300EF8188 /* RegisterScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */; };
 		133AF509271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133AF508271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift */; };
+		13B4BE4C27356C6500248344 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B4BE4B27356C6500248344 /* HomeScreenViewController.swift */; };
+		13B4BE4E27356D5E00248344 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B4BE4D27356D5E00248344 /* HomeScreen.swift */; };
+		13B4BE512735986600248344 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B4BE502735986600248344 /* UserDetailTableViewCell.swift */; };
+		13B4BE542735ABD900248344 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B4BE532735ABD900248344 /* DataUser.swift */; };
 		13C954F32719F9C6007242CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C954F22719F9C6007242CE /* AppDelegate.swift */; };
 		13C954F52719F9C6007242CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C954F42719F9C6007242CE /* SceneDelegate.swift */; };
 		13C954F72719F9C6007242CE /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C954F62719F9C6007242CE /* LoginScreenController.swift */; };
@@ -32,6 +36,10 @@
 		133AF504271A47AF00EF8188 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		133AF506271AD0E300EF8188 /* RegisterScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenProtocol.swift; sourceTree = "<group>"; };
 		133AF508271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewControllerExtension.swift; sourceTree = "<group>"; };
+		13B4BE4B27356C6500248344 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		13B4BE4D27356D5E00248344 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		13B4BE502735986600248344 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		13B4BE532735ABD900248344 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		13C954EF2719F9C6007242CE /* appViewCodeSnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appViewCodeSnapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C954F22719F9C6007242CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C954F42719F9C6007242CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +117,49 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		13B4BE4627356BB100248344 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				13B4BE522735ABC500248344 /* Model */,
+				13B4BE4F2735983B00248344 /* Cell */,
+				13B4BE4A27356C2E00248344 /* screen */,
+				13B4BE4727356BF800248344 /* controller */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		13B4BE4727356BF800248344 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				13B4BE4B27356C6500248344 /* HomeScreenViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		13B4BE4A27356C2E00248344 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				13B4BE4D27356D5E00248344 /* HomeScreen.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		13B4BE4F2735983B00248344 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				13B4BE502735986600248344 /* UserDetailTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		13B4BE522735ABC500248344 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13B4BE532735ABD900248344 /* DataUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		13C954E62719F9C6007242CE = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +184,7 @@
 				13C95512271A372F007242CE /* Commons */,
 				13C9550B271A05CE007242CE /* protocols */,
 				13270EDE271B7FB700B2FE0A /* Alert */,
+				13B4BE4627356BB100248344 /* HomeScreen */,
 				13C95506271A0539007242CE /* LoginScreen */,
 				13C95513271A3747007242CE /* RegisterScreen */,
 				13C954FB2719F9C9007242CE /* Assets.xcassets */,
@@ -339,12 +391,16 @@
 			files = (
 				13C954F72719F9C6007242CE /* LoginScreenController.swift in Sources */,
 				133AF509271AD29F00EF8188 /* RegisterScreenViewControllerExtension.swift in Sources */,
+				13B4BE542735ABD900248344 /* DataUser.swift in Sources */,
+				13B4BE4E27356D5E00248344 /* HomeScreen.swift in Sources */,
 				13C95519271A3863007242CE /* LoginScreenProtocol.swift in Sources */,
 				13C9550A271A05B4007242CE /* LoginScreen.swift in Sources */,
+				13B4BE4C27356C6500248344 /* HomeScreenViewController.swift in Sources */,
 				133AF505271A47AF00EF8188 /* RegisterScreen.swift in Sources */,
 				13C95517271A3803007242CE /* LoginScreenControllerExtension.swift in Sources */,
 				13270EE2271B809300B2FE0A /* Alert.swift in Sources */,
 				13C9550E271A0636007242CE /* ViewCodeProtocol.swift in Sources */,
+				13B4BE512735986600248344 /* UserDetailTableViewCell.swift in Sources */,
 				133AF507271AD0E300EF8188 /* RegisterScreenProtocol.swift in Sources */,
 				133AF503271A478C00EF8188 /* RegisterScreenController.swift in Sources */,
 				13C954F32719F9C6007242CE /* AppDelegate.swift in Sources */,
