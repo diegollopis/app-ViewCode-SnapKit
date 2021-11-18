@@ -1,4 +1,4 @@
-# app-ViewCode-SnapKit
+# app-ViewCode-SnapKit (em andamento...)
 
 App tutorial do curso de viewCode da BackFront Academy.
 
